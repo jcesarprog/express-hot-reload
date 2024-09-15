@@ -37,6 +37,5 @@
   "engineStrict": true,
   "dependencies": {
     "express": "^4.21.0"
-  },
-  "packageManager": "yarn@4.5.0"
+  }
 }

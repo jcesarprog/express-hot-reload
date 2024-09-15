@@ -3,7 +3,7 @@ import fs from "fs";
 
 interface SSEHotReloadOptions {
   watchFolders?: string[];
-  verbose: boolean;
+  verbose?: boolean;
 }
 
 let clients: Response[] = [];
