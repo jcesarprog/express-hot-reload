@@ -8,7 +8,7 @@ interface SSEHotReloadOptions {
 
 let clients: Response[] = [];
 
-export function sseHotReload(
+export function hotReloadMiddleware(
   options: SSEHotReloadOptions = {
     watchFolders: ["./src"],
     verbose: false,
@@ -21,10 +21,14 @@ export function sseHotReload(
     if (!fs.existsSync(folder)) {
       throw new Error("Folder not found: " + folder);
     } else {
-      fs.watch(folder, { recursive: true }, (_eventType: any, _filename: any) => {
-        // console.log(`File changed: ${filename} in ${folder}`);
-        notifyClients();
-      });
+      fs.watch(
+        folder,
+        { recursive: true },
+        (_eventType: any, _filename: any) => {
+          // console.log(`File changed: ${filename} in ${folder}`);
+          notifyClients();
+        }
+      );
     }
   });
 
@@ -81,4 +85,4 @@ function notifyClients(): void {
   });
 }
 
-export default sseHotReload;
+export default hotReloadMiddleware;

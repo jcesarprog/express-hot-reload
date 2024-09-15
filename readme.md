@@ -1,6 +1,6 @@
 # express-hot-reload-sse
 
-`express-hot-reload-sse` is a middleware for Express applications that provides hot-reloading using Server-Sent Events (SSE). This package allows automatic page refreshes in the browser when changes to server-side files are detected. It is especially useful during development to improve productivity by eliminating the need to manually refresh the browser after every code change.
+`@devmade/express-hot-reload` is a middleware for Express applications that provides hot-reloading using Server-Sent Events (SSE). This package allows automatic page refreshes in the browser when changes to server-side files are detected. It is especially useful during development to improve productivity by eliminating the need to manually refresh the browser after every code change.
 
 ### Features
 
@@ -13,21 +13,22 @@
 ### Installation
 
 ```bash
-npm install express-hot-reload-sse
+npm install @devmade/express-hot-reload
 ```
 
 ### Usage
 
-To use `express-hot-reload-sse`, simply import and add it as middleware in your Express app:
+To use `@devmade/express-hot-reload`, simply import and add it as middleware in your Express app:
 
 ```js
 const express = require("express");
-const { sseHotReload } = require("express-hot-reload-sse");
+const { hotReloadMiddleware } = require("@devmade/express-hot-reload");
 
 const app = express();
 
 // Add the middleware to your Express app
-app.use(sseHotReload({ watchFolders: ["./src", "./views"] }));
+// it accpets multiple folders optionally or if none is passed it will look at `.src`
+app.use(hotReloadMiddleware({ watchFolders: ["./src", "./views"] }));
 
 app.get("/", (req, res) => {
   res.send("<html><body><h1>Hello World</h1></body></html>");
