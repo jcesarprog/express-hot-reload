@@ -22,7 +22,7 @@
   "description": "An express middleware to support hot reloading ON BROWSERS, using SSE, now you wont need a heavy bundler just for the hot reload the browser anymore!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jcesarprog/express-hot-reload-sse"
+    "url": "https://github.com/jcesarprog/express-hot-reload"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
