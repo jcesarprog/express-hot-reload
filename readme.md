@@ -1,7 +1,3 @@
-Here's a summary you can use in the README for the `express-hot-reload-sse` package:
-
----
-
 # express-hot-reload-sse
 
 `express-hot-reload-sse` is a middleware for Express applications that provides hot-reloading using Server-Sent Events (SSE). This package allows automatic page refreshes in the browser when changes to server-side files are detected. It is especially useful during development to improve productivity by eliminating the need to manually refresh the browser after every code change.
