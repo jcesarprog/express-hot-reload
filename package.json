@@ -18,10 +18,13 @@
   "author": "Julio Teixeira",
   "license": "MIT",
   "description": "A middleware to support hot reloading in express, using SSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcesarprog/express-hot-reload-sse"
+  },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^22.5.5",
-    "express": "^4.21.0",
     "typescript": "^5.6.2"
   }
 }
