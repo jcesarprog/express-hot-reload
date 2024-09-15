@@ -21,7 +21,7 @@ export function sseHotReload(
     if (!fs.existsSync(folder)) {
       throw new Error("Folder not found: " + folder);
     } else {
-      fs.watch(folder, { recursive: true }, (eventType, filename) => {
+      fs.watch(folder, { recursive: true }, (_eventType: any, _filename: any) => {
         // console.log(`File changed: ${filename} in ${folder}`);
         notifyClients();
       });
@@ -80,3 +80,5 @@ function notifyClients(): void {
     client.write("data: refresh\n\n");
   });
 }
+
+export default sseHotReload;
