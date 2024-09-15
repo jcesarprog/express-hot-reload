@@ -46,7 +46,7 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "readme.md"
   ],
   "publishConfig": {
     "access": "public"
