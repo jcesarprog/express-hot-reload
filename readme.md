@@ -57,5 +57,3 @@ app.use(
 When any file in the specified folders changes, the connected browser will automatically refresh, improving your development workflow.
 
 ---
-
-This summary outlines the key features, setup, and usage instructions for the middleware in a clear and concise manner.
