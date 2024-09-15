@@ -19,7 +19,7 @@
   ],
   "author": "Julio Teixeira",
   "license": "MIT",
-  "description": "A middleware to support hot reloading in express, using SSE",
+  "description": "A middleware to support hot reloading in express, using SSE, now you wont need a heavy bundler just for the hot reload anymore!",
   "repository": {
     "type": "git",
     "url": "https://github.com/jcesarprog/express-hot-reload-sse"
