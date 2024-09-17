@@ -13,9 +13,11 @@
     "express",
     "hot",
     "reload",
+    "auto",
+    "refresh",
+    "browser",
     "sse",
-    "middleware",
-    "auto"
+    "middleware"
   ],
   "author": "Julio Teixeira",
   "license": "MIT",
