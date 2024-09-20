@@ -2,6 +2,8 @@
 
 `@devmade/express-hot-reload` is a middleware for Express applications that provides hot-reloading using Server-Sent Events (SSE). This package allows automatic page refreshes in the browser when changes to server-side files are detected. It is especially useful during development to improve productivity by eliminating the need to manually refresh the browser after every code change.
 
+![NPM Page](https://www.npmjs.com/package/@devmade/express-hot-reload)
+
 ### Features
 
 - **File Watching**: Automatically watches specified folders for file changes.
